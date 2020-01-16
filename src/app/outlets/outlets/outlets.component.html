@@ -1,0 +1,23 @@
+<ng-template cxOutletRef="Section1" cxOutletPos="before" let-model>
+  "Section1" position
+  <pre>{{ model.components$ | async | json }}</pre>
+
+  <ul>
+      <li *ngFor="let component of model.components$ | async">
+          <pre>
+              {{ print(component.uid) | async  | json }}
+          </pre>
+      </li>
+  </ul>
+</ng-template>
+
+
+
+<ng-template cxOutletRef="ProductDetailsPageTemplate" cxOutletPos="before">
+    <div *ngIf="(product$ | async)?.manufacturer === 'Kodak'">
+        <h1>This is Kodak!</h1>
+    </div>
+    <!-- <pre>
+        {{ product$ | async | json }}
+    </pre> -->
+</ng-template>
