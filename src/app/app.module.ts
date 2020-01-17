@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
 import { OutletsModule } from './outlets/outlets.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { OutletsModule } from './outlets/outlets.module';
       }
     }),
 
-    OutletsModule
+    // OutletsModule,
+    // ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
