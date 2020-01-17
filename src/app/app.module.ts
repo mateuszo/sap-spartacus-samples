@@ -7,6 +7,9 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
 import { OutletsModule } from './outlets/outlets.module';
 import { ComponentsModule } from './components/components.module';
 import { CustomConfigModule } from './config/config.module';
+import { LayoutModule } from './layout/layout.module';
+import { ConfigModule, I18nConfig } from '@spartacus/core';
+import { I18nConfigModule } from './i18n-config/i18n-config.module';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,8 @@ import { CustomConfigModule } from './config/config.module';
         }
       },
       context: {
-        baseSite: ['electronics-spa']
-      },
-      i18n: {
-        resources: translations,
-        chunks: translationChunksConfig,
-        fallbackLang: 'en'
+        baseSite: ['electronics-spa'],
+        urlParameters: ['language']
       },
       features: {
         level: '1.3',
@@ -37,7 +36,9 @@ import { CustomConfigModule } from './config/config.module';
 
     // OutletsModule,
     // ComponentsModule,
-    // CustomConfigModule
+    CustomConfigModule,
+    // LayoutModule,
+    I18nConfigModule
   ],
   providers: [],
   bootstrap: [AppComponent]
