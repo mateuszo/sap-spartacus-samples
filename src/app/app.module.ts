@@ -6,6 +6,7 @@ import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
 import { OutletsModule } from './outlets/outlets.module';
 import { ComponentsModule } from './components/components.module';
+import { CustomConfigModule } from './config/config.module';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ComponentsModule } from './components/components.module';
 
     // OutletsModule,
     // ComponentsModule,
+    // CustomConfigModule
   ],
   providers: [],
   bootstrap: [AppComponent]
