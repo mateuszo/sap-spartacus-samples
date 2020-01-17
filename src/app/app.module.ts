@@ -10,6 +10,7 @@ import { CustomConfigModule } from './config/config.module';
 import { LayoutModule } from './layout/layout.module';
 import { ConfigModule, I18nConfig } from '@spartacus/core';
 import { I18nConfigModule } from './i18n-config/i18n-config.module';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { I18nConfigModule } from './i18n-config/i18n-config.module';
     // ComponentsModule,
     CustomConfigModule,
     // LayoutModule,
-    I18nConfigModule
+    I18nConfigModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
