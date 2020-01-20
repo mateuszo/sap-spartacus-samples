@@ -13,6 +13,7 @@ import { I18nConfigModule } from './i18n-config/i18n-config.module';
 import { ServicesModule } from './services/services.module';
 import { SeoModule } from './seo/seo.module';
 import { RxjsModule } from './rxjs/rxjs.module';
+import { DataBindingModule } from './data-binding/data-binding.module';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { RxjsModule } from './rxjs/rxjs.module';
     I18nConfigModule,
     // ServicesModule,
     // SeoModule
-    RxjsModule
+    // RxjsModule,
+    DataBindingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
