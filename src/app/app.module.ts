@@ -12,6 +12,7 @@ import { ConfigModule, I18nConfig } from '@spartacus/core';
 import { I18nConfigModule } from './i18n-config/i18n-config.module';
 import { ServicesModule } from './services/services.module';
 import { SeoModule } from './seo/seo.module';
+import { RxjsModule } from './rxjs/rxjs.module';
 
 @NgModule({
   declarations: [
@@ -38,11 +39,12 @@ import { SeoModule } from './seo/seo.module';
 
     // OutletsModule,
     // ComponentsModule,
-    CustomConfigModule,
+    // CustomConfigModule,
     // LayoutModule,
     I18nConfigModule,
-    ServicesModule,
-    SeoModule
+    // ServicesModule,
+    // SeoModule
+    RxjsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
