@@ -11,6 +11,7 @@ import { LayoutModule } from './layout/layout.module';
 import { ConfigModule, I18nConfig } from '@spartacus/core';
 import { I18nConfigModule } from './i18n-config/i18n-config.module';
 import { ServicesModule } from './services/services.module';
+import { SeoModule } from './seo/seo.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ServicesModule } from './services/services.module';
     CustomConfigModule,
     // LayoutModule,
     I18nConfigModule,
-    ServicesModule
+    ServicesModule,
+    SeoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
